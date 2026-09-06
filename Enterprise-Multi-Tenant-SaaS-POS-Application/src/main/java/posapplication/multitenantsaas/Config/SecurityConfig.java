@@ -31,6 +31,7 @@ public class SecurityConfig {
                         cors.configurationSource(corsConfigurationSource())).build();
     }
 
+    @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
