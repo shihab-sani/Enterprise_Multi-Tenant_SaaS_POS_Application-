@@ -6,5 +6,5 @@ import posapplication.multitenantsaas.Payload.Response.AuthResponse;
 
 public interface AuthService {
     AuthResponse Register(UserDtos userDtos) throws UserException;
-    AuthResponse Login(UserDtos userDtos);
+    AuthResponse Login(UserDtos userDtos) throws UserException;
 }
